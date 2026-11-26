@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loanso - Banking Analysis Ltd. 
+        </title>
+        <link rel="shortcut icon" type="image/x-icon" href="static/ico.ico" />
+        <link rel="stylesheet" href="static/style_pre.css">
+    </head>
+    <body>
+        <div id="header">   
+            <img src="static/icon.png" alt="Logo" height="50px" width="50px">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+
+                <li><a id="logout" href="/logout">Log out</a></li>
+            </ul>
+        </div>
+        <section>
+            <div id="container">
+            <form action="/predictor" method="post">
+                <h2>Loan Approval Prediction </h2>
+                <aside>
+                    <input type="number" name="no_of_dependents" placeholder="Enter number of dependents" required>
+                    <input type="number" name="income_annum" placeholder="Enter your annual income" required>    
+                </aside>
+                <aside> 
+                    <input type="number" name="loan_amount" placeholder="Enter your loan amount" required>
+                    <input type="number" name="loan_term" placeholder="Enter your loan term in months" required>
+                </aside>
+                <aside>
+                    <input type="number" name="cibil_score" placeholder="Enter your credit score" required>
+                    <input type="number" name="residential_assets_value" placeholder="Enter residential assets value" required>            
+                </aside>    
+                <aside>
+                    <input type="number" name="commercial_assets_value" placeholder="Enter your commercial assets" required>
+                    <input type="number" name="luxury_assets_value" placeholder="Enter your luxury assets" required>
+                </aside>
+                <aside>
+                    <input type="number" name="bank_assets" placeholder="Enter your bank assets" required>
+                </aside>
+                <button type="submit" on click="">Analyze</button>
+            </form>
+            </div>
+        </section>
+    </body>
+</html>

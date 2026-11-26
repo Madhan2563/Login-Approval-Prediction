@@ -1,0 +1,3 @@
+user_id,username,password,email,emp_status,loan_id
+1,admin,admin,admin@gmail.com,admin,0
+2,madhan,2003,madhan@gmail.com,student,1

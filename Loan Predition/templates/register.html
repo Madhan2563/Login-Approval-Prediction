@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loanso - Banking Analysis Ltd. 
+        </title>
+        <link rel="shortcut icon" type="image/x-icon" href="static/ico.ico" />
+        <link rel="stylesheet" href="static/style_regi.css">
+    </head>
+    <body>
+        <div id="header">   
+            <img src="static/icon.png" alt="Logo" height="50px" width="50px">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+
+            </ul>
+        </div>
+        <section>
+            <div id="form-container">
+            <form action="/regi" method="post">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="username" placeholder="User Name" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <select name="emp_status" required>
+                    <option value="">Select Employment Status</option>
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                </select>
+            <button type="submit">Sign Up</button>
+            </form>
+            </div>
+        </section>
+    </body>
+</html>
